@@ -1,0 +1,42 @@
+<h1>The Lorem Ipsum Generator!</h1>
+<style>
+body {
+    background-color: lightskyblue;
+}
+ h1 {
+     text-align: center;
+     font-family: Georgia, sans-serif;
+     background-color: white;
+ }
+</style>
+
+<body>
+
+<% @all_content.each do |para| %>
+     <p>
+            <% para.each do |sentence| %>
+                      <%sentence.each do |word| %>.
+                    <%=word%>
+                    <%end%>
+            <%end%>
+     </p>
+
+
+
+       <br>
+       <br>
+
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
